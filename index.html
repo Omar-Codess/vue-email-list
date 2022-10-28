@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="css/style.css">    
     <title>Document</title>
 
+    <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     
+    <div id="app">
+        <h1>Le email random sono</h1>
+        <ul>
+            <li v-for="email in emailsArray">
+                {{email}}
+            </li>
+        </ul>
 
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
